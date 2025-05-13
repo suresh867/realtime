@@ -40,7 +40,7 @@ export default function QuilEditor() {
     useEffect(() => {
         if (!quill) return;
 
-        const handler = (delta: any, oldDelta: any, source: string) => {
+        const handler = (delta: Delta, oldDelta: Delta, source: string) => {
             if (source !== "user") return;
             console.log(delta);
         };
@@ -56,5 +56,5 @@ export default function QuilEditor() {
         setupEditor();
     }, [setupEditor]);
 
-    return <div className="container" ref={wrapperRef} />;
+    return <div className="editor" ref={wrapperRef} />;
 }
