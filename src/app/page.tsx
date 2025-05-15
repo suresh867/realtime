@@ -10,7 +10,7 @@ const Page = () => {
         href={"/editor"}
         className={buttonVariants({ variant: "outline" })}
       >
-        Go to Editor <ArrowBigRight className='text-red-500'/>
+        Go to Editor <ArrowBigRight className='text-red-500' />
       </Link>
     </div>
   )
